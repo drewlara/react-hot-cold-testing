@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: L8288AMCwNLw+Vpifu+8HYF6VlRFZ4Hcz+m8sxWAALGn1ctQDyxOKQw+YM83AxTAZmbjNPrVGwPxw8RUiH9UoXAydcbJHTft2y1P8QRFcEiniNOoGaO80hgXdfhJmop6YW7WP97k1vDNQkCo4Ppy8CjZRvBsEAI+DLAnMJU3mmf78DKqAkSEOwSZaQOLVfjIygsVmU4QDy/WRd2+0/7PymqiDBuiEjqWDUD/uMkLEdWNXE78v535tSDRUcyKMSg7KqV2WXq6eES4BolC6Q1hGQGMXCQn451VLHnBhPCyi58K5ncg3GtBTXgH7gdICB3sUcWkBx1dr5N7r1SO25IAuKxdsa+9fW0VWlaoqz410zb61jeTnMxvVG0KaJI1sCaEpN4ZqMlRxg74DiWhErnP+y9/LNycabljl5Sz9aROlRvRTWcrzKAKleJusBfJEeDZiFFUcrdJZF3742ZdVtHHTSb0NjCYUgyDofSTQuxHyCsR/sBPSFQHHvMiC9vV+ermFEiHtLQk2HW0UNk1/ogs/qRxiPSOkgHPS/Nd7kdbeWQnvjS/jx62KGvi8T2fA3B8x8R7iH4hIyMwu6qNbyXakeK1P1eRqszJY/b+TytWzjKxNxD1Nxn/oB7U/m26etFlJSjvAKkNYBnRcKXwkZywduTCkYAcSxzQkJ6P7iQOStI=
+  app: evening-escarpment-57915
+  on:
+    repo: drewlara/react-hot-cold-testing
